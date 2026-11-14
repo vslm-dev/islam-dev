@@ -1130,6 +1130,11 @@ details[open] summary::after {
   color: var(--on-dark-muted);
 }
 
+.bot-link { margin-top: 4px; }
+.contact .bot-link { margin-top: 18px; color: var(--on-dark); }
+.contact .bot-link span { color: var(--signal); }
+.contact .bot-helper { margin-top: 5px; font-size: 13px; line-height: 1.6; }
+
 .contact a:focus-visible, .plan.featured a:focus-visible {
   outline-color: var(--signal);
 }
@@ -1648,7 +1653,7 @@ details[open] summary::after {
 <div class="motion-progress" id="motion-progress" aria-hidden="true"></div>
 <header class="header wrap"><a class="brand" href="#home"><span class="brandmark" aria-hidden="true">и.</span>Ислам <i>· Dev</i></a><nav class="nav" aria-label="Навигация"><a href="#examples">Работы</a><a href="#prices">Стоимость</a><a class="optional" href="#process">Как работаем</a><a class="optional" href="#faq">Вопросы</a></nav><div class="header-actions"><a class="text-link" href="#contact">Обсудить проект <span aria-hidden="true">↗</span></a><button id="theme-toggle" class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Тёмная тема" title="Включить тёмную тему" hidden><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.7 13A8.5 8.5 0 0 1 11 3.3 8.5 8.5 0 1 0 20.7 13Z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button></div></header>
 <main id="home">
-<section class="hero wrap" aria-labelledby="main-title"><div><div class="eyebrow"><span class="dot"></span>Сайты и боты для малого бизнеса</div><h1 id="main-title">Ваш бизнес —<br>на сайте.<br><em>Заявки — у вас.</em></h1><p class="lead">Соберу услуги, цены и запись в одном месте. Подключу заявки в мессенджер, а при необходимости — бота для ответов клиентам.</p><p class="hero-price"><strong>Сайт от 8 000 ₽</strong><br>Сайт с ботом — от 12 000 ₽</p><div class="actions"><a class="btn btn-primary" href="#contact">Обсудить бесплатное демо <span aria-hidden="true">↗</span></a><a class="text-link" href="#examples">Сначала примеры <span aria-hidden="true">↓</span></a></div><p class="helper">Выберите способ связи ниже. Расскажите о бизнесе или пришлите ссылку на вашу карточку на Яндекс.Картах.</p></div>
+<section class="hero wrap" aria-labelledby="main-title"><div><div class="eyebrow"><span class="dot"></span>Сайты и боты для малого бизнеса</div><h1 id="main-title">Ваш бизнес —<br>на сайте.<br><em>Заявки — у вас.</em></h1><p class="lead">Соберу услуги, цены и запись в одном месте. Подключу заявки в мессенджер, а при необходимости — бота для ответов клиентам.</p><p class="hero-price"><strong>Сайт от 8 000 ₽</strong><br>Сайт с ботом — от 12 000 ₽</p><div class="actions"><a class="btn btn-primary" href="#contact">Обсудить бесплатное демо <span aria-hidden="true">↗</span></a><a class="text-link" href="#examples">Сначала примеры <span aria-hidden="true">↓</span></a></div><p class="helper">Выберите способ связи ниже. Расскажите о бизнесе или пришлите ссылку на вашу карточку на Яндекс.Картах.</p><a class="text-link bot-link" data-contact-channel="telegram-bot" href="https://t.me/zayavkii1bot" target="_blank" rel="noopener noreferrer">Сначала познакомиться в боте <span aria-hidden="true">↗</span></a></div>
 <div class="hero-visual workshop"><div class="workshop-top"><span>ИСЛАМ / ЦИФРОВАЯ МАСТЕРСКАЯ</span><span class="workshop-index" id="workshop-step">01 — Собираем страницу</span></div><div class="workshop-stage"><canvas id="workshop-canvas" width="600" height="500" aria-hidden="true"></canvas><div class="scene-labels" aria-label="Из чего собирается страница">
   <span class="scene-label label-title" data-scene-label="title">Ваш бизнес</span>
   <span class="scene-label label-photo" data-scene-label="image">Ваши фото</span>
@@ -1683,6 +1688,8 @@ details[open] summary::after {
     <div>
       <h2 id="contact-title">Начнём с вашего бизнеса,<br>а не со сложного брифа.</h2>
       <p>Напишите, чем занимаетесь и что хотите упростить. Обсудим, нужен ли вам сайт, бот или пока достаточно другого решения.</p>
+      <a class="text-link bot-link" data-contact-channel="telegram-bot" href="https://t.me/zayavkii1bot" target="_blank" rel="noopener noreferrer">Услуги и цены в боте <span aria-hidden="true">↗</span></a>
+      <p class="bot-helper">Можно посмотреть услуги, цены и ответы на вопросы без личной переписки.</p>
     </div>
     <div class="contact-options" aria-label="Способы связи">
       <a class="btn" data-contact-channel="telegram" href="https://t.me/islam_workk" target="_blank" rel="noopener noreferrer">Telegram <span aria-hidden="true">↗</span></a>
